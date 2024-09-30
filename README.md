@@ -1,9 +1,7 @@
-# grupo_8_ComicVSManga
-Proyecto integrador Digital House / cohorte 6 Protalento
-
+# Final project for the course "ReactJS" sponsored by ComIT
 
 ### Tabla de contenidos
-1. [Demo](#1-demo)
+1. [Project Description](#1-description)
 2. [Ejecución del proyecto](#2-ejecución-del-proyecto)
 3. [Descripción de la oferta de productos](#3-descripción-de-la-oferta-de-productos)
 4. [Público objetivo](#4-público-objetivo)
@@ -12,19 +10,21 @@ Proyecto integrador Digital House / cohorte 6 Protalento
 7. [Tableros de trabajo](#7-tableros-de-trabajo)
 
 
-### 1. Demo
-El proyecto hasta la fecha está disponible en el siguiente [enlace](https://comic-vs-manga.herokuapp.com/).
+### 1. Project description
+This app is a is a catalogue of vendors. Catalogues have  numerous applications, from corporate catalogues to local directories shared between neighbours. I used the technologies learned during the course:
+HTML5, CSS3, JavaScript, and React.
 
-### 2. Ejecución del proyecto
-* Requerimientos:
+In the backend, I used an SQL database.
+
+### 2. Project Execution
+* Requirements:
   1. Node.js
-  2. IDE de base de datos a elección
-* Proceso:
-  1. Descargar/clonar el proyecto actual
-  2. Ejecutar en consola el comando: ```npm install```
-  3. Esperar que los módulos requeridos sean instalados
-  4. Crear la base de datos a través de los archivos [structure.sql](https://github.com/mariecp27/grupo_8_ComicVSManga/blob/main/database/structure.sql) y [data.sql](https://github.com/mariecp27/grupo_8_ComicVSManga/blob/main/database/data.sql)
-  6. Ejecutar en consola el comando: ```cp .env.example .env```. Se creará un archivo .env con la siguiente estructura:
+  2. Database IDE (I use MySQL)
+* Process:
+  1. Download or clone the project
+  2. In the console execute ```npm install```. The required modules will be installed.
+  3. Build the data base from the files structure.sql and data.sql // poner el link a los archivos
+  6. In the console execute ```cp .env.example .env```. A .env file will be created with the following data:
   ```
   DB_HOST=
   DB_USER=
@@ -32,12 +32,14 @@ El proyecto hasta la fecha está disponible en el siguiente [enlace](https://com
   DB_NAME=
   API_LINK=http://localhost:3030
   ```
-    *Los datos deben ser completados por el host, nombre de usuario, contraseña y nombre de la base de datos; según se hayan generado en el IDE de elección.*
+    *Register the host, username, password and database name*
    
-   6. Ejecutar en consola el comando: ```npm run dev```
+   6. In the console execute ```npm run dev```
 
 
-### 3. Descripción de la oferta de productos
+### 3. Functionality
+Provide an user-friendly interface to search vendors. 
+
 **“Comic vs Manga”** se presenta como una opción amigable y atractiva a todos los amantes de las historias descritas en estos formatos, sin importar si se es un experto en el área, con conocimiento sobre todos los universos de DC, o un entusiasta, quien ha descubierto hace poco que muchos de los animes que ve cada semana usualmente están basados en aclamados libros de origen oriental.
 
 Nuestro *e-commerce* tendrá gran variedad de productos originales al español en ambos formatos (comic y manga), con envíos a toda Colombia, para que nuestros clientes puedan acceder a las historias que todos amamos, con la mejor calidad, y en la comodidad de su casa.

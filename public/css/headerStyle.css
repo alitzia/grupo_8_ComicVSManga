@@ -2,9 +2,11 @@
 :root{
     --myTitles: 'Montserrat', sans-serif;
     --myText: 'Lato', sans-serif;
-    --myYellow: #FECC4F;
-    --myPink: #F11E77;
-    --myBlue: #251854;
+    --myBlack: #000000;
+    --myGrey: #a7a49b;
+    --myYellow: #000000;
+    --myPink: #50a77e;
+    --myBlue: #5069a7;
     --myGreen: #94CB91;
 }
 

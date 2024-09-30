@@ -1,27 +1,29 @@
 <!-- Logo -->
 <a href="/" class="header__logo-link">
-    <img src="/images/logoCompleto.png" alt="Logo del sitio" class="header__logo">
+    <img src="/images/whiteLogo.png" alt="Logo del sitio" class="header__logo">
 </a>
 
-<!-- Barra de búsqueda y botón -->
+<!-- Search bar and button -->
 <form action="/products" method="GET" class="header__form">
-    <input type="text" placeholder="¡Vamos a navegar!" class="header__search-bar" name="search">
+    <input type="text" placeholder="Search service" class="header__search-bar" name="search">
     <button type="submit" class="header__search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
 </form>
 
-<!-- Enlaces de la barra de navegación: tienda, cómics, mangas, carrito de compras y botón de inicio de sesión -->
+<!-- Navigation bar: search, listing services, home maintenance, login, sign up -->
 <div class="header__text">
     <nav class="header__nav">
         <ul>
             <li class="header__nav-inner-container">
-                <a href="/products/comic" class="header__link">CÓMICS <i class="fa-solid fa-angle-right"></i></a>
-                <ul class="header__nav-inner">
-                    <li><a class="header__nav-link" href="/products/marvel">MARVEL</a></li>
-                    <li><a class="header__nav-link" href="/products/dc">DC COMICS</a></li>
-                    <li><a class="header__nav-link" href="/products/independent">INDEPENDIENTE</a></li>
+                <a href="/products/comic" class="header__link">LISTING SERVICES <i class="fa-solid fa-angle-right"></i></a>
+                <ul class="header__nav-inner"> <!--change link-->
+                    <li><a class="header__nav-link" href="/products/marvel">CLEANING</a></li>
+                    <li><a class="header__nav-link" href="/products/dc">PHOTO & VIDEO</a></li>
+                    <li><a class="header__nav-link" href="/products/independent">STAGING</a></li>
+                    <li><a class="header__nav-link" href="/products/independent">SIGNS</a></li> <!--change link-->
                 </ul>
             </li>
-            <li><a href="/products/manga" class="header__link">MANGAS</a></li>
+            <li><a href="/products/manga" class="header__link">HOME MAINTENANCE</a></li> <!--change link-->
+            <!--
             <li><a href="/products" class="header__link header__shop"><i class="fa-solid fa-basket-shopping"></i> TIENDA</a></li>
             <li>
                 <a href="/shopping-cart" class="header__shopping">
@@ -32,13 +34,15 @@
                                     <%= locals.counter %> 
                             </span>
                         <% } %>
-                    </div>
+                    </div> 
                 </a>
             </li>
+            -->
+
             <div class="header__login">
                 <% if (locals.isLogged) { %>
                     <li class="header__nav-inner-container">
-                        <a href="/users/profile" class="header__link">¡Hola, <%= locals.userLogged.name %>! <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="/users/profile" class="header__link">Hi, <%= locals.userLogged.name %>! <i class="fa-solid fa-angle-right"></i></a>
                         <ul class="header__nav-inner header__nav-inner2">
                             <li><a class="header__nav-link" href="/users/logout">Logout</a></li>
                         </ul>
@@ -50,7 +54,9 @@
             </div>
         </ul>
     </nav>
+
     <!-- Menú para la resolución mobile -->
+    <!-- 
     <div class="header__menu" id="header__menu">
         <div class="header__menu1"></div>
         <div class="header__menu2"></div>
@@ -84,4 +90,5 @@
             <% } %>
         </ul>
     </nav>
+    -->
 </div>

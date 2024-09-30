@@ -50,6 +50,9 @@ app.use('/api/users', userApiRoutes);
 const productsApiRoutes = require('./routes/api/productsRouter');
 app.use('/api/products', productsApiRoutes);
 
+// I added it but didn't work
+//const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.PASSWORD);
+
 // Servidor
 app.listen(process.env.PORT || 3030, () => {
     console.log("Servidor corriendo en el puerto 3030, ¡vamos al Manga!");

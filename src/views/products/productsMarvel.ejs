@@ -11,16 +11,18 @@
 
     <main>
         <!-- Banner -->
+        <!--
         <img src="/images/mainSlider/slider2.png" alt="Banner Marvel" class="main__banner-img main__banner-img-above">
         <img src="/images/mainSlider/slider2.png" alt="Banner Marvel" class="main__banner-img">
+        -->
         <div class="main__banner main__banner-marvel">
-            <video src="/images/categories/introMarvel.mp4" alt="Banner" autoplay muted loop></video>
+            <video src="/images/categories/cleaning.mp4" alt="Banner" autoplay muted loop></video>
         </div>
 
         <!-- Productos -->
         <div class="main__products-tittle main__products-tittle-marvel">
-            <h1>TEAM</h1>
-            <h1>MARVEL</h1>
+            <h1>CLEANING</h1>
+            <h1>SERVICES</h1>
         </div>
         <section class="main__products">
             <% for(let i = 0; i < productsInCategory.length; i++) {%>
@@ -37,7 +39,7 @@
                         <p><b><%= productsInCategory[i].price %></b> COP</p>
                     </a>
                 </article>
-             <% } %>
+             <% } %> 
         </section>
     </main>
 

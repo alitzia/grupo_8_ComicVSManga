@@ -1,7 +1,7 @@
 {
   "name": "grupo_8_comicvsmanga",
   "version": "1.0.0",
-  "description": "Proyecto integrador Digital House / cohorte 6 Protalento",
+  "description": "Proyecto integrador DH",
   "main": "app.js",
   "scripts": {
     "start": "node src/app.js",
@@ -32,7 +32,7 @@
     "multer": "^1.4.4",
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.18",
-    "sequelize": "^6.19.0",
+    "sequelize": "^6.37.3",
     "sequelize-cli": "^6.4.1",
     "validator": "^13.7.0"
   },

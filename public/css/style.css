@@ -2,6 +2,9 @@
 :root{
     --myTitles: 'Montserrat', sans-serif;
     --myText: 'Lato', sans-serif;
+    --myBlack: #000000;
+    --myWhite: #fdfbfb;
+    --myGrey: #a7a49b;
     --myYellow: #FECC4F;
     --myPink: #F11E77;
     --myBlue: #251854;
@@ -51,7 +54,7 @@ html{
     margin-top: 40px;
 }
 
-/* Estilos palabra "Team" del slider */
+/* Style "Team" word in slider */
 .slider__title-1{
     font-family: var(--myTitles);
     font-size: 2.8rem;
@@ -63,7 +66,7 @@ html{
 }
 
 .slider__title1-marvel{
-    color: var(--myPink);
+    color: var(--myGray);
 }
 
 .slider__title1-dc{
